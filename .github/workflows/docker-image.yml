@@ -24,8 +24,8 @@ jobs:
 
     # Step 3: Build the Docker image
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/${{ github.repository_owner }}/hasznaltauto-figyelo:master
+      run: docker build . --file Dockerfile --tag ghcr.io/blazebytehungary/hasznaltauto-figyelo:master
 
     # Step 4: Push the Docker image to GHCR
     - name: Push the Docker image to GitHub Container Registry
-      run: docker push ghcr.io/${{ github.repository_owner }}/hasznaltauto-figyelo:master
+      run: docker push ghcr.io/blazebytehungary/hasznaltauto-figyelo:master
